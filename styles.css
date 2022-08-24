@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  text-align: center;
+  margin-top: 40vh;
+  background-color: #222;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #17D4FE;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 700px){
+	h1 {
+    font-size: 6rem;
+  }
+}
