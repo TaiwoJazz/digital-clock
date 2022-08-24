@@ -28,7 +28,6 @@ const displayday = document.querySelector(".day");
 function getDate() {
   const date = new Date();
   let hour = date.getHours();
-  hour = (hour % 12) || 12;
   let minute = date.getMinutes();
   let second = date.getSeconds();
 
