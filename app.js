@@ -65,7 +65,7 @@ setInterval(getDate, 1000);
 function currentDate() {
   const today = new Date();
   const year = today.getFullYear();
-  const day = today.getDay()
+  const day = today.getDate()
   const month = months[today.getMonth()];
   const weekday = weekdays[today.getDay()];
 
@@ -78,6 +78,8 @@ function currentDate() {
     format.textContent = `${day}nd`
   } else if (day == 3) {
     format.textContent = `${day}rd`
+  } else {
+    format.textContent = `${day}th`
   }
 }
 currentDate()
