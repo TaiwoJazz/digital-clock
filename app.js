@@ -32,7 +32,7 @@ function getDate() {
   let second = date.getSeconds();
 
   displaytime.innerHTML = `<h1>
-  <span class="hr">${hour}</span>:<span class="min">${minute}</span>:<span class="sec">${second}</span><span class="daylight"></span></h1>`;
+  <span class="hr">${hour}</span>:<span class="min">${minute}</span>:<span class="sec">${second}</span> <span class="daylight"></span></h1>`;
 
   let hr = document.querySelector(".hr");
   let min = document.querySelector(".min");
