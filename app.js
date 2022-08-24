@@ -32,7 +32,8 @@ function getDate() {
   let second = date.getSeconds();
 
   displaytime.innerHTML = `<h1>
-  <span class="hr">${hour}</span>:<span class="min">${minute}</span>:<span class="sec">${second}</span> <span class="daylight"></span></h1>`;
+  <span class="hr">${hour}</span>:<span class="min">${minute}</span>:<span class="sec">${second}</span>`;
+  // <span class="daylight"></span></h1>
 
   let hr = document.querySelector(".hr");
   let min = document.querySelector(".min");
@@ -50,12 +51,12 @@ function getDate() {
     hr.textContent = `0${hour}`;
   }
 
-  let daylight = document.querySelector(".daylight");
-  if (hour < 12) {
-    daylight.textContent = "AM";
-  } else {
-    daylight.textContent = "PM";
-  }
+  // let daylight = document.querySelector(".daylight");
+  // if (hour < 12) {
+  //   daylight.textContent = "AM";
+  // } else {
+  //   daylight.textContent = "PM";
+  // }
 }
 
 setInterval(getDate, 1000);
