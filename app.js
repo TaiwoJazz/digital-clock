@@ -82,4 +82,4 @@ function currentDate() {
     format.textContent = `${day}th`
   }
 }
-currentDate()
+setInterval(currentDate, 10000);
