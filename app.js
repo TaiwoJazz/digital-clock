@@ -61,6 +61,9 @@ function getDate() {
 
 setInterval(getDate, 1000);
 
+window.addEventListener("DOMContentLoaded", function () {
+  currentDate();
+});
 
 function currentDate() {
   const today = new Date();
@@ -82,4 +85,4 @@ function currentDate() {
     format.textContent = `${day}th`
   }
 }
-setInterval(currentDate, 10000);
+
