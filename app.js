@@ -59,10 +59,9 @@ function getDate() {
   // }
 }
 
-setInterval(getDate, 1000);
-
 window.addEventListener("DOMContentLoaded", function () {
   currentDate();
+  setInterval(getDate, 1000);
 });
 
 function currentDate() {
